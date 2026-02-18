@@ -1,7 +1,7 @@
 import { google } from "googleapis";
 import fs from "fs";
 
-const FOLDER_ID = "1ZMQf0J4Fc3M4oGag3DOvwkQn7xePvwko";
+const FOLDER_ID = "1negFSx_87qiOo8LEX7iNFIiFaLMhYUAf";
 
 async function main() {
   console.log("Connecting to Google Drive...");
