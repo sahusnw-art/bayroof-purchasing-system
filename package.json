@@ -1,0 +1,10 @@
+{
+  "name": "bayroof-purchasing-system",
+  "version": "1.0.0",
+  "description": "Purchasing automation system",
+  "main": "process.js",
+  "type": "module",
+  "dependencies": {
+    "googleapis": "^131.0.0"
+  }
+}
