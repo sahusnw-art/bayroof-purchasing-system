@@ -1,0 +1,28 @@
+name: Hourly Purchasing Processor
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create Google Credentials File
+        run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT }}' > service-account.json
+
+      - name: Run Processing Script
+        run: node process.js
