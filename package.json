@@ -4,7 +4,8 @@
   "description": "Purchasing automation system",
   "main": "process.js",
   "type": "module",
-  "dependencies": {
-    "googleapis": "^131.0.0"
-  }
+  ""dependencies": {
+  "googleapis": "^131.0.0",
+  "sqlite3": "^5.1.6"
+}
 }
